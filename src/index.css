@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-50: #ecfdf5;
+  --color-brand-100: #d1fae5;
+  --color-brand-200: #a7f3d0;
+  --color-brand-300: #6ee7b7;
+  --color-brand-400: #34d399;
+  --color-brand-500: #10b981;
+  --color-brand-600: #059669;
+  --color-brand-700: #047857;
+  --color-brand-800: #065f46;
+  --color-brand-900: #064e3b;
+  --color-brand-950: #022c22;
+
+  --color-bg-deep: #05070a;
+  --color-bg-card: #0d1117;
+  --color-bg-alt: #161b22;
+  --color-border-subtle: #1f2937;
+  --color-border-bright: #30363d;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-deep text-slate-300 font-sans antialiased;
+  }
+}
+
+/* Custom classes for the "Hardware" feel */
+.glass-panel {
+  @apply bg-bg-card border border-border-subtle rounded-xl shadow-2xl;
+}
+
+.neon-glow {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+}
+
+.neon-text {
+  @apply text-brand-400;
+  text-shadow: 0 0 8px rgba(52, 211, 153, 0.4);
+}
+
+.data-grid-border {
+  background-image: linear-gradient(to right, #1f2937 1px, transparent 1px),
+    linear-gradient(to bottom, #1f2937 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Theme Variants */
+.theme-mint {
+  --color-brand-500: #2dd4bf; /* Teal 500 */
+  --color-brand-400: #5eead4;
+}
+
+.theme-lime {
+  --color-brand-500: #84cc16; /* Lime 500 */
+  --color-brand-400: #bef264;
+}
+
+.theme-forest {
+  --color-brand-500: #059669; /* Emerald 600 */
+  --color-brand-400: #34d399;
+}
+
+.theme-cyber {
+  --color-brand-500: #84cc16; /* Lime */
+  --color-brand-400: #22d3ee; /* Cyan */
+}
+
+.theme-amoled {
+  --color-bg-deep: #000000;
+  --color-bg-card: #050505;
+  --color-bg-alt: #0a0a0a;
+  --color-border-subtle: #111111;
+  --color-border-bright: #1a1a1a;
+}

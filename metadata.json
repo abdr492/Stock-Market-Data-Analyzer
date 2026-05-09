@@ -1,0 +1,12 @@
+{
+  "name": "StockPulse Analyzer",
+  "description": "A comprehensive stock market platform featuring real-time tracking, interactive charts, AI-powered fundamental analysis, portfolio management, and smart price alerts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "Real-time Data Streaming",
+    "Interactive Financial Charts",
+    "AI Fundamental Analysis",
+    "Portfolio Backtesting",
+    "Multi-currency Tracking"
+  ]
+}
